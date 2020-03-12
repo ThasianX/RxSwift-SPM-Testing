@@ -11,6 +11,7 @@ import RxSubproject
 import RxExternalProject
 import RxSwift
 import RxCocoa
+import DrX
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,6 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         externalProject.y
             .bind { print($0) }
+            .disposed(by: bag)
+
+        relay.drx
+            .do { print("AA") }
+            .bind(onNext: { print("\($0)")})
             .disposed(by: bag)
         
         return true

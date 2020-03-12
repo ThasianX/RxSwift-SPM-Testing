@@ -2,8 +2,8 @@
 //  RxShim.h
 //  RxShim
 //
-//  Created by Kevin Li on 3/11/20.
-//  Copyright © 2020 kevinli. All rights reserved.
+//  Created by Kevin Li on 3/12/20.
+//  Copyright © 2020 duet. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

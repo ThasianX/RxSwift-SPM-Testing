@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E68CE3E241952FC0052C28C /* RxShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E68CE3D241952FC0052C28C /* RxShim.framework */; };
-		1E68CE3F241952FC0052C28C /* RxShim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E68CE3D241952FC0052C28C /* RxShim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1E85DC6D241925C7009B27E5 /* RxExternalProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E85DC6B241925C7009B27E5 /* RxExternalProject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E85DC80241926AE009B27E5 /* RxExternalProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E85DC7F241926AE009B27E5 /* RxExternalProject.swift */; };
+		1EC78C49241A6BBF00645D6C /* RxShim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC78C48241A6BBF00645D6C /* RxShim.framework */; };
+		1EC78C4A241A6BBF00645D6C /* RxShim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC78C48241A6BBF00645D6C /* RxShim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1E68CE40241952FC0052C28C /* Embed Frameworks */ = {
+		1EC78C4B241A6BBF00645D6C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1E68CE3F241952FC0052C28C /* RxShim.framework in Embed Frameworks */,
+				1EC78C4A241A6BBF00645D6C /* RxShim.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,11 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E162DE2241A648A00BE004B /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E162DE9241A650E00BE004B /* RxDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E162E1C241A68C000BE004B /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E68CE3D241952FC0052C28C /* RxShim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxShim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E85DC68241925C7009B27E5 /* RxExternalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxExternalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E85DC6B241925C7009B27E5 /* RxExternalProject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxExternalProject.h; sourceTree = "<group>"; };
 		1E85DC6C241925C7009B27E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E85DC7F241926AE009B27E5 /* RxExternalProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExternalProject.swift; sourceTree = "<group>"; };
+		1EC78C48241A6BBF00645D6C /* RxShim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxShim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E68CE3E241952FC0052C28C /* RxShim.framework in Frameworks */,
+				1EC78C49241A6BBF00645D6C /* RxShim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +54,10 @@
 		1E68CE3C241952FC0052C28C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1EC78C48241A6BBF00645D6C /* RxShim.framework */,
+				1E162E1C241A68C000BE004B /* RxSwift.framework */,
+				1E162DE9241A650E00BE004B /* RxDataSources.framework */,
+				1E162DE2241A648A00BE004B /* RxSwift.framework */,
 				1E68CE3D241952FC0052C28C /* RxShim.framework */,
 			);
 			name = Frameworks;
@@ -104,7 +112,7 @@
 				1E85DC64241925C7009B27E5 /* Sources */,
 				1E85DC65241925C7009B27E5 /* Frameworks */,
 				1E85DC66241925C7009B27E5 /* Resources */,
-				1E68CE40241952FC0052C28C /* Embed Frameworks */,
+				1EC78C4B241A6BBF00645D6C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,6 +313,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RxExternalProject/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +339,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RxExternalProject/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

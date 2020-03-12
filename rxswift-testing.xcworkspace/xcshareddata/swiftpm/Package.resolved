@@ -2,6 +2,42 @@
   "object": {
     "pins": [
       {
+        "package": "Action",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/Action",
+        "state": {
+          "branch": null,
+          "revision": "cdade63f7bbe1f5e1eff7779e5858a796dc2c001",
+          "version": "4.0.1"
+        }
+      },
+      {
+        "package": "DrX",
+        "repositoryURL": "https://github.com/DuetHealth/DrX",
+        "state": {
+          "branch": null,
+          "revision": "d6ef7019ef589ca399d527d652607285bbfa10b6",
+          "version": "3.3.1"
+        }
+      },
+      {
+        "package": "RxDataSources",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxDataSources",
+        "state": {
+          "branch": null,
+          "revision": "a18cee01c9ee55f04d0c7eb15c77a96c3648c88e",
+          "version": "4.0.1"
+        }
+      },
+      {
+        "package": "RxFlow",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxFlow",
+        "state": {
+          "branch": null,
+          "revision": "16e63a1d10f1e9de2393d4ec984deb5f53a9e8ee",
+          "version": "2.7.0"
+        }
+      },
+      {
         "package": "RxSwift",
         "repositoryURL": "https://github.com/ReactiveX/RxSwift",
         "state": {

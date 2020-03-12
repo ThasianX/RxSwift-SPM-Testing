@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Shim Dependencies/Shim Dependencies.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RxSwift-Testing/RxSwift-Testing.xcodeproj">
    </FileRef>
    <FileRef
