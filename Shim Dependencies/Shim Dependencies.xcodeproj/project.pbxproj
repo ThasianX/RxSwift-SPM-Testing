@@ -14,6 +14,8 @@
 		1EC78C71241A6C4C00645D6C /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC78C70241A6C4C00645D6C /* RxFlow */; };
 		1EC78C73241A6C5A00645D6C /* DrX in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC78C72241A6C5A00645D6C /* DrX */; };
 		1EC78C75241A6C5D00645D6C /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC78C74241A6C5D00645D6C /* Action */; };
+		1EC78C79241A6E0700645D6C /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC78C78241A6E0700645D6C /* RxOptional */; };
+		1EC78C7C241A6E4500645D6C /* Cordate in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC78C7B241A6E4500645D6C /* Cordate */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EC78C79241A6E0700645D6C /* RxOptional in Frameworks */,
+				1EC78C7C241A6E4500645D6C /* Cordate in Frameworks */,
 				1EC78C71241A6C4C00645D6C /* RxFlow in Frameworks */,
 				1EC78C69241A6C4500645D6C /* RxSwift in Frameworks */,
 				1EC78C75241A6C5D00645D6C /* Action in Frameworks */,
@@ -107,6 +111,8 @@
 				1EC78C70241A6C4C00645D6C /* RxFlow */,
 				1EC78C72241A6C5A00645D6C /* DrX */,
 				1EC78C74241A6C5D00645D6C /* Action */,
+				1EC78C78241A6E0700645D6C /* RxOptional */,
+				1EC78C7B241A6E4500645D6C /* Cordate */,
 			);
 			productName = RxShim;
 			productReference = 1EC78C5A241A6C3E00645D6C /* RxShim.framework */;
@@ -141,6 +147,8 @@
 				1E162E1F241A694200BE004B /* XCRemoteSwiftPackageReference "RxFlow" */,
 				1EC78C41241A6A6800645D6C /* XCRemoteSwiftPackageReference "DrX" */,
 				1EC78C45241A6B5900645D6C /* XCRemoteSwiftPackageReference "Action" */,
+				1EC78C77241A6E0700645D6C /* XCRemoteSwiftPackageReference "RxOptional" */,
+				1EC78C7A241A6E4500645D6C /* XCRemoteSwiftPackageReference "Cordate" */,
 			);
 			productRefGroup = 1EE45CBB241A582E006E9003 /* Products */;
 			projectDirPath = "";
@@ -404,6 +412,22 @@
 				minimumVersion = 4.0.1;
 			};
 		};
+		1EC78C77241A6E0700645D6C /* XCRemoteSwiftPackageReference "RxOptional" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxOptional";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+		1EC78C7A241A6E4500645D6C /* XCRemoteSwiftPackageReference "Cordate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DuetHealth/Cordate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -436,6 +460,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1EC78C45241A6B5900645D6C /* XCRemoteSwiftPackageReference "Action" */;
 			productName = Action;
+		};
+		1EC78C78241A6E0700645D6C /* RxOptional */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EC78C77241A6E0700645D6C /* XCRemoteSwiftPackageReference "RxOptional" */;
+			productName = RxOptional;
+		};
+		1EC78C7B241A6E4500645D6C /* Cordate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EC78C7A241A6E4500645D6C /* XCRemoteSwiftPackageReference "Cordate" */;
+			productName = Cordate;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
